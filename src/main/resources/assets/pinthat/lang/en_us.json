@@ -1,0 +1,9 @@
+{
+    "text.autoconfig.pinthat.option.whatCorner": "Which Corner",
+    "text.autoconfig.pinthat.option.pinnedMessage": "Pinned Message",
+    "text.autoconfig.pinthat.option.pinEnabled": "Pin Enabled?",
+    "text.autoconfig.pinthat.option.textColor": "Text Color",
+    "text.autoconfig.pinthat.option.xOffset": "X Offset",
+    "text.autoconfig.pinthat.option.yOffset": "Y Offset",
+    "text.autoconfig.pinthat.title": "Pin That! Config"
+}

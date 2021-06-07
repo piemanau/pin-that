@@ -1,0 +1,9 @@
+{
+    "text.autoconfig.pinthat.option.whatCorner": "Welche Ecke",
+    "text.autoconfig.pinthat.option.pinnedMessage": "Angepinnte Nachricht",
+    "text.autoconfig.pinthat.option.pinEnabled": "Aktiv",
+    "text.autoconfig.pinthat.option.textColor": "Textfarbe",
+    "text.autoconfig.pinthat.option.xOffset": "Abstand von links",
+    "text.autoconfig.pinthat.option.yOffset": "Abstand von oben",
+    "text.autoconfig.pinthat.title": "Pin That! Konfiguration"
+}

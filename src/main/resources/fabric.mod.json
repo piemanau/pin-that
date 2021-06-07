@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "pinthat",
   "version": "${version}",
-
   "name": "Pin That!",
   "description": "This mod lets you pin text on any corner of the HUD.",
   "authors": [
@@ -10,37 +9,26 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/pin-that",
-    "sources": "https://github.com/LimeShulkerBox/pin-that"
+    "sources": "https://github.com/LimeShulkerBox/pin-that",
+    "issues": "https://github.com/LimeShulkerBox/pin-that/issuess"
   },
-
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/pinthat/icon.png",
   "environment": "client",
-
   "entrypoints": {
-    "main": [
+    "client": [
       "com.limeshulkerbox.pinthat.ModInitializer"
     ],
-    "client": [
-      "com.limeshulkerbox.pinthat.client.PinThatClient"
-    ],
     "modmenu": [
-      "com.limeshulkerbox.pinthat.ModMenuIntegration"
+      "com.limeshulkerbox.pinthat.config.ModMenuIntegration"
     ]
   },
-
   "mixins": [
     "modid.mixins.json"
   ],
-
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.9.0",
     "fabric": "*",
-    "minecraft": "1.16.x",
-    "modmenu": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "minecraft": "1.16.x"
   }
 }
