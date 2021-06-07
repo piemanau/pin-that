@@ -10,7 +10,7 @@
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/pin-that",
     "sources": "https://github.com/LimeShulkerBox/pin-that",
-    "issues": "https://github.com/LimeShulkerBox/pin-that/issuess"
+    "issues": "https://github.com/LimeShulkerBox/pin-that/issues"
   },
   "license": "MIT",
   "icon": "assets/pinthat/icon.png",
