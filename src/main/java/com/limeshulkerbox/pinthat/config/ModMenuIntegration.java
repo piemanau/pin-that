@@ -1,6 +1,5 @@
-package com.limeshulkerbox.pinthat;
+package com.limeshulkerbox.pinthat.config;
 
-import com.limeshulkerbox.pinthat.config.ConfigStructure;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.autoconfig.AutoConfig;
