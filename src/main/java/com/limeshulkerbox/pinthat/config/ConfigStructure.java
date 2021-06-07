@@ -11,11 +11,12 @@ public
 class ConfigStructure implements ConfigData {
     public ConfigStructure() {
     }
+
     public boolean pinEnabled = true;
 
-        @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
-        public WhatCorner whatCorner = WhatCorner.TOPR;
+    @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
+    public WhatCorner whatCorner = WhatCorner.TOPR;
 
-        public int xOffset = 2;
-        public int yOffset = 2;
-    }
+    public int xOffset = 2;
+    public int yOffset = 2;
+}

@@ -15,30 +15,16 @@ import net.minecraft.util.registry.DynamicRegistryManager;
 
 public class ModInitializer implements net.fabricmc.api.ModInitializer {
 
-	public static ConfigStructure config;
+    public static ConfigStructure config;
 
-	@Override
-	public void onInitialize() {
-		AutoConfig.register(ConfigStructure.class, JanksonConfigSerializer::new);
-		config = AutoConfig.getConfigHolder(ConfigStructure.class).getConfig();
+    @Override
+    public void onInitialize() {
+        AutoConfig.register(ConfigStructure.class, JanksonConfigSerializer::new);
+        config = AutoConfig.getConfigHolder(ConfigStructure.class).getConfig();
 
-		ClientCommandManager.DISPATCHER.register(
-				ClientCommandManager.literal
-						(
-								"pin"
-						)
-						.then(ClientCommandManager.literal
-								(
-								"pin"
-						)
-								.then(ClientCommandManager.argument
-								(
-										"message", MessageArgumentType.message()
-								)
-								.executes(new PinCommand())
-								)
-						)
-				.then(ClientCommandManager.literal("clear").executes(new PinClearCommand()))
-		);
-	}{}
+        ClientCommandManager.DISPATCHER.register(
+                ClientCommandManager.literal
+                        ("pin").then(ClientCommandManager.literal("pin").then(ClientCommandManager.argument("message", MessageArgumentType.message()).executes(new PinCommand())).then(ClientCommandManager.literal("clear").executes(new PinClearCommand()))
+                ));
+    }
 }
