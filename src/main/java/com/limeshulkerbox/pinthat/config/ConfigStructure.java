@@ -22,4 +22,5 @@ public class ConfigStructure implements ConfigData {
     public int xOffset = 2;
 
     public int yOffset = 2;
+
 }
