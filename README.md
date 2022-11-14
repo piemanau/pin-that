@@ -9,6 +9,7 @@ or you use the following chat commands:
 
 -   `/pin set Your_Message` to change to message
 -   `/pin clear` to clear the current message
+-   `/pin color COLOR` to set the color of the pin
 
 ## Setup:
 
