@@ -7,15 +7,16 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
-import net.minecraft.commands.arguments.MessageArgument;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 
-public final class PinCommand implements Command<FabricClientCommandSource> {
+public class PinColorCommand implements Command<FabricClientCommandSource> {
     @Override
     public int run(CommandContext<FabricClientCommandSource> context) throws CommandSyntaxException {
-        ModInitializer.config.pinnedMessage = context.getArgument("message", MessageArgument.Message.class).getText();
+        ChatFormatting formatting = context.getArgument("color", ChatFormatting.class);
+        ModInitializer.config.textColor = formatting.getColor();
         context.getSource().sendFeedback(
-            Component.literal("Pinned message set to " + ModInitializer.config.pinnedMessage)
+                Component.literal("Pinned message color set to " + formatting.getName())
         );
         AutoConfig.getConfigHolder(ConfigStructure.class).save();
         return 0;
